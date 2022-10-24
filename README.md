@@ -1,15 +1,19 @@
-# pq
+# kyber-node
+
+A sample library for implementing encryption and decryption with [CRYSTALS-Kyber](https://pq-crystals.org/kyber/) in Node.js. CRYSTALS-Kyber is on the standardization track as part of [NIST's Post-Quantum Cryptography](https://csrc.nist.gov/Projects/Post-Quantum-Cryptography) project.
+
+This project was implemented as a proof-of-concept for [Evervault](https://evervault.com).
 
 This project was bootstrapped by [create-neon](https://www.npmjs.com/package/create-neon).
 
-## Installing pq
+## Installing kyber-node from npm
 
-Installing pq requires a [supported version of Node and Rust](https://github.com/neon-bindings/neon#platform-support).
+Installing kyber-node requires a [supported version of Node and Rust](https://github.com/neon-bindings/neon#platform-support).
 
 You can install the project with npm. In the project directory, run:
 
 ```sh
-$ npm install
+$ npm install kyber-node
 ```
 
 This fully installs the project, including installing any dependencies and running the build.
@@ -31,8 +35,8 @@ After building pq, you can explore its exports at the Node REPL:
 ```sh
 $ npm install
 $ node
-> require('.').hello()
-"hello node"
+> require('.').encrypt("Hello, world!")
+"ev:pq:Uznds/JrabXgAUPz:7aTkgHZ8Qr/LI3Em9fWuKRm9dEDRoa4HT/d9uKcKnbPSDpNSDK25LKBCqAucg6Cy/ttpvrcOlA8dWK235R1M83h+eNJzwxf5X/cmCJ3XFJu99xVMkCs+FlUVOuuHSQganq4KE07AaZOa71ChGje8OJU/dA777djZkCq8k7fvuD7umpSVVBOHg8IihkGaVgbMnGr/lxAp6jlUQhGcUwwvSuECT+r+pqCTbNnRyg+qf69USr9c8TJuu3A2DiBgKNHyG/FnOiBkTPcn9PKZb/CBCCCcJ3AmqD0dOKaC+EmyC/P9o+eyfENqqdluoLYhqcZE/25BcbPy7/5Exgi+uRycMDf5FmczxdexkxKRKDsp+hurfm4uIFAxjVbcYPpnYLu9gQpjiRau+1QuC9eJC38K+bAL66NWL89CsULGNkqYdX1co4OGuIZTJupwi6ZYUmkSTen61RHdt+nleuqsDXCHrOCtIfqNhF5oYmQczaxE0AG06obcvPChUe0YJxV+ZV/ifyMdzTPfrmo7aNcA8Sx3Qv/6LCZtZtLCrtIMy3uy7GBs/TEfHSjB9LBZToEilmuA/RQK9h7TFxovze9EqDBJC4Uu0NcON2wab2kHlXj4pcfeWX6qKeb/ZIiBqLigkUA1HeozB4Av6w+imhi9dxV5cc+OW9DtuAgZCeK51p8NrORepaLyaJGRj2tplD9HpLoKbkIT89uMf6CWISu2smw2OBJqRkNHwUX++LijAld80MoA/obpy/cFegJhzQdGueZGuQSRVR/TfwWILAXbGuf8H8EkwfK/S9gC+c6R7NuoT80Bg3Suaqn3D4GVwKD+OMSaFUIABEZG8BCEovqvGCC8B9GXFb8uIMksje+6pGlSu2M0c59xLmwj31LF9t0oc62psI+MaNYsWf5CKAMEizffc1hLGmVDRmBvp/d+eOtNJYQhtmEVUbdF/Agx2v5Ec3591Cc+sDngkztMAmQGf7h7jhipU0BXz2ZptqbmAzonaeX+FKY6ZIfXxuS4SKQeWhtv:GsLWJKx3nddj6bzo54xUMjOz1Eb1vnQac1HjK8E=:$"
 ```
 
 ## Available Scripts
@@ -63,14 +67,14 @@ Same as [`npm build`](#npm-build) but, builds the module with the [`release`](ht
 
 ### `npm test`
 
-Runs the unit tests by calling `cargo test`. You can learn more about [adding tests to your Rust code](https://doc.rust-lang.org/book/ch11-01-writing-tests.html) from the [Rust book](https://doc.rust-lang.org/book/).
+Runs the unit tests by calling `cargo test`.
 
 ## Project Layout
 
 The directory structure of this project is:
 
 ```
-pq/
+kyber-node/
 ├── Cargo.toml
 ├── README.md
 ├── index.node
@@ -117,3 +121,5 @@ To learn more about Neon, see the [Neon documentation](https://neon-bindings.com
 To learn more about Rust, see the [Rust documentation](https://www.rust-lang.org).
 
 To learn more about Node, see the [Node documentation](https://nodejs.org).
+
+To learn more about Evervault, see the [Evervault documentation](https://docs.evervault.com).
