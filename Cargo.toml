@@ -1,0 +1,22 @@
+[package]
+name = "kyber-node"
+version = "0.1.0"
+license = "ISC"
+edition = "2021"
+exclude = ["index.node"]
+
+[lib]
+crate-type = ["cdylib"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+aes-gcm = "0.10.1"
+base64 = "0.13.1"
+pqcrypto-kyber = "0.7.6"
+pqcrypto-traits = "0.3.4"
+
+[dependencies.neon]
+version = "0.10"
+default-features = false
+features = ["napi-6"]
