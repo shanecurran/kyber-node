@@ -1,0 +1,1 @@
+command -v cargo 2>&1 || { echo >&2 "Cargo toolkit not found. Installing now..."; curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y; }
