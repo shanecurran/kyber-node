@@ -6,7 +6,7 @@ This project was implemented as a proof-of-concept for [Evervault](https://everv
 
 This project was bootstrapped by [create-neon](https://www.npmjs.com/package/create-neon).
 
-## Installing kyber-node from npm
+## Installing `kyber-node` from `npm`
 
 Installing kyber-node requires a [supported version of Node and Rust](https://github.com/neon-bindings/neon#platform-support).
 
@@ -18,7 +18,7 @@ $ npm install kyber-node
 
 This fully installs the project, including installing any dependencies and running the build.
 
-## Building pq
+## Building `kyber-node`
 
 If you have already installed the project and only want to run the build, run:
 
@@ -28,9 +28,9 @@ $ npm run build
 
 This command uses the [cargo-cp-artifact](https://github.com/neon-bindings/cargo-cp-artifact) utility to run the Rust build and copy the built library into `./index.node`.
 
-## Exploring pq
+## Exploring `kyber-node`
 
-After building pq, you can explore its exports at the Node REPL:
+After building `kyber-node`, you can explore its exports at the Node REPL:
 
 ```sh
 $ npm install
